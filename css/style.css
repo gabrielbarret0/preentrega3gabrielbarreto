@@ -19,7 +19,7 @@ body {
 }
 
 .section1 {
-  display:inline-block;
+  display: inline-block;
   background-image: url(../assets/img/camaraportada.jpg);
   align-content: center;
   grid-area: section1;
@@ -82,12 +82,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .contenedor {
   width: 1200px;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .main {
@@ -120,7 +120,7 @@ main {
   color: white;
   margin: 10px auto;
   margin-left: 20px;
-  background-color: black;
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -128,6 +128,7 @@ main {
   display: inline-block;
   width: 400px;
   height: 400px;
+  background-size: cover;
   padding: auto;
   margin: 0 auto;
   margin-left: 15px;
