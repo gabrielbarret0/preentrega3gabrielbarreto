@@ -1,6 +1,8 @@
 /*CSS INDEX PAGINA PRINCIPAL*/
 body {
   margin: 0;
+  padding: 0;
+  text-align: center;
   background-color: black;
 }
 
@@ -16,12 +18,15 @@ body {
   padding: 10px 0;
   background-color: #131212;
   color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section1 {
   display: inline-block;
   background-image: url(../assets/img/camaraportada.jpg);
-  align-content: center;
+  align-content: normal;
   grid-area: section1;
   width: 550px;
   height: 410px;
@@ -48,16 +53,22 @@ header p {
 
 .tipboton {
   width: 200px;
-  height: 40px;
+  height: 35px;
   background-color: #dbd7d7;
   color: black;
-  padding-top: 15px;
+  padding-top: 10px;
   border-radius: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1, 5rem;
   display: inline-block;
   margin-top: 0px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tipboton:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 .section3 {
@@ -126,6 +137,7 @@ main {
 
 .caja1 {
   display: inline-block;
+  background-image: url(../assets/img/M4.jpg);
   width: 400px;
   height: 400px;
   background-size: cover;
@@ -134,25 +146,45 @@ main {
   margin-left: 15px;
   background-color: white;
   border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.caja1:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 .caja2 {
   display: inline-block;
+  background-image: url(../assets/img/M23.jpg);
   width: 400px;
   height: 400px;
   margin-left: 10px;
   background-color: white;
   border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.caja2:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 .caja3 {
   display: inline-block;
+  background-image: url(../assets/img/M20.jpg);
   width: 400px;
   height: 400px;
   padding-top: 10px;
   margin-left: 15px;
   background-color: white;
   border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.caja3:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 .caja4 {
@@ -165,10 +197,16 @@ main {
   margin-top: 10px;
   background-color: white;
   border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.caja4:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 footer {
-  background-color: #868181;
+  background-color: black;
   color: #fbfbfc;
   font-size: 23px;
   text-align: right;
@@ -196,7 +234,7 @@ footer {
   height: 200px;
   display: inline;
   padding-top: 10px;
-  background-color: white;
+  background-color: BLACK;
   text-align: center;
 }
 
@@ -297,9 +335,55 @@ footer {
   margin-left: 15px;
   background-color: white;
   border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.caja-g:hover {
+  background-color: #0056b3;
+  transform: scale(1.5);
 }
 
 article h2 {
   color: white;
   font-size: 40px;
+}
+
+
+/* PAGINA TIPS 
+Estilos para el contenedor */
+.contenedor-t {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Estilos para cada caja de tips */
+.caja-tip {
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos para las imágenes dentro de cada caja */
+.caja-tip img {
+  max-width: 100%;
+  max-height: 70%;
+  object-fit: cover;
+}
+
+/* Estilos para el texto */
+.caja-tip p {
+  color: black;
+  margin-top: 10px;
+  font-size: 26px;
 }
